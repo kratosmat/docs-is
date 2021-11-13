@@ -210,7 +210,7 @@ expression that validates and only allows access to specific callback URLs.
 If required, increase the `session ID length` by changing the `sessionIDLength` attribute of the session manager in the `context.xml` file in the `<IS_HOME>/repository/conf/tomcat` directory as shown below. The default value is `16 bytes`.
 
 ``` java
-<Manager className="org.wso2.carbon.webapp.mgt.CarbonTomcatSessionManager" sessionIdLength="16"></Manager>
+<Manager className="org.apache.catalina.session.StandardManager" sessionIdLength="16"></Manager>
 ```
 
 ## Admin credentials
